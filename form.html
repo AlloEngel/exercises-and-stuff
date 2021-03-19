@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="form.css" media="screen">
+    <title>Registration</title>
+</head>
+<body>
+    
+    <div>
+        <h1 id="title">DEV registration</h1>
+        <p id="subtitle">Complete your information</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="group">
+            <div class="campo">
+                <label for="name"><strong>Name</strong></label>
+                <input type="text" name="name" id="name" required>
+            </div>
+
+            <div class="campo">
+                <label for="surname"><strong>Surname</strong></label>
+                <input type="text" name="surname" id="surname" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label><strong>Which type of application do you develop?</strong></label>
+            <label>
+                <input type="radio" name="devweb" value="frontend" checked>Front-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="backend">Back-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="fullstack">Fullstack
+            </label>
+        </div>
+        
+        <div class="campo">
+            <label for="qualification"><strong>Qualification Level</strong></label>
+            <select id="qualification">
+                <option selected disabled value="">Select</option>
+                <option>Junior</option>
+                <option>Middle</option>
+                <option>Senior</option>
+            </select>
+
+        </div>
+
+        <fieldset class="group">
+            <div id="check">
+                <label><strong>Select the tools you use</strong></label><br><br>
+                <input type="checkbox" id="tool1" name="tool1" value="HTML">
+                <label id= "tools" for="tool1">HTML</label>
+                <input type="checkbox" id="tool2" name="tool2" value="CSS">
+                <label id= "tools" for="tool2">CSS</label>
+                <input type="checkbox" id="tool3" name="tool3" value="Javascript">
+                <label id= "tools" for="tool3">Javascript</label>
+                <input type="checkbox" id="tool4" name="tool4" value="PHP">
+                <label id= "tools" for="tool4">PHP</label>
+                <input type="checkbox" id="tool5" name="tool5" value="C#">
+                <label id= "tools" for="tool5">C#</label>
+                <input type="checkbox" id="tool6" name="tool6" value="Typescript">
+                <label id= "tools" for="tool6">Typescript</label>
+                <input type="checkbox" id="tool7" name="tool7" value="Python">
+                <label id= "tools" for="tool7">Python</label>
+                <input type="checkbox" id="tool8" name="tool8" value="Java">
+                <label id= "tools" for="tool8">Java</label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label for="experience"><strong>Please tell us about your programming experience</strong></label>
+            <textarea rows="6" style="width: 26em" id="experience" name="experience"></textarea>
+        </div>
+
+        <button class="button" type="submit" onsubmit="">Submit</button>
+
+    </form>
+</body>
+</html>
